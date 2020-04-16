@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout_two"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:background="#fefefe"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/shouqi_jinddian"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#fbfbfb"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/shouqi" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/imageButtou_zhongdananfang"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/jingdian_channel"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_biaozhun"
+                android:layout_marginTop="5dp"
+                android:text="中大南方"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/imageButton_huguangyan"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textview_one"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/jingdian2_channel"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/textview_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_weixing"
+                android:layout_marginTop="5dp"
+                android:text="湖光岩"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/imageButton_baiyunshan"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textview_two"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/jingdian3_channel"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/textview_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_reli"
+                android:layout_marginTop="5dp"
+                android:text="白云山"
+                android:textColor="#000" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout_three"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:background="#fefefe"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/shouqi_yanshi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#fbfbfb"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/shouqi" />
+
+        <RadioGroup
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/imageButton_guanbi"
+                android:layout_width="85dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/yanshi_channel"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_biaozhun"
+                android:layout_marginTop="2dp"
+                android:text="默认"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/imageButton_gray"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textview_one"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/yanshi2_channel"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/textview_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_weixing"
+                android:layout_marginTop="2dp"
+                android:text="灰色"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/imageButton_cha"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textview_two"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/yanshi3_channel"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/textview_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_reli"
+                android:layout_marginTop="2dp"
+                android:text="茶色"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/imageButton_balck"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textview_two"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/yanshi4_channel"
+                android:button="@null" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_reli"
+                android:layout_marginTop="2dp"
+                android:text="黑色"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/imageButton_chuxing"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textview_two"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/yanshi5_channel"
+                android:button="@null" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_reli"
+                android:layout_marginTop="2dp"
+                android:text="出行"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/imageButton_wuliu"
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textview_two"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/yanshi6_channel"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton_reli"
+                android:layout_marginTop="2dp"
+                android:text="物流"
+                android:textColor="#000" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

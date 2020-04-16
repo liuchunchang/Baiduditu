@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBE5F1"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.bishe_git.Jingdian_Activity">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/JingDian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="6dp"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/JingDianImage"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/JingDian"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/JingDianText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JingDianImage"
+        android:padding="3dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#C6D9F1"
+        android:onClick="fanhui"
+        android:text="返回" />
+</RelativeLayout>

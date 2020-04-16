@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#fefefe"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_touxiang"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@mipmap/touxiang" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:onClick="search"
+            android:paddingRight="120dp"
+            android:text="搜地点、找景点"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@mipmap/yuyin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:id="@+id/layout_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_one"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="#fefefe"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="6dp"
+        tools:ignore="InvalidId">
+
+        <Button
+            android:onClick="tuceng"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tupian5_channel" />
+
+        <TextView
+            android:onClick="tuceng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="图层"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#020202" />
+
+        <Button
+            android:onClick="jingdian"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/jingdian" />
+
+        <TextView
+            android:onClick="jingdian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="景点"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#020202" />
+
+        <Button
+            android:onClick="yanshi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/yangshi" />
+
+        <TextView
+            android:onClick="yanshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="样式"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#020202" />
+
+        <ImageView
+            android:onClick="lukuang"
+            android:id="@+id/imageButton_lukuang"
+            android:layout_width="30dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:onClick="lukuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="路况"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="160dp"
+        android:elevation="10dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/tupian_channel"
+            android:elevation="10dp"
+            android:onClick="dingwei"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/luxian"
+        android:elevation="5dp"
+        android:onClick="luxian" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#fefefe"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_one"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_tianqi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="tianqi" />
+
+        <TextView
+            android:id="@+id/textview_tianqi"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:text="北京 26度"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:onClick="tianqi"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

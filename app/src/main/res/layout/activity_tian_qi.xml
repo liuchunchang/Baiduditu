@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    tools:context=".TianQi_Activity">
+
+    <LinearLayout
+        android:id="@+id/layout_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#fefefe"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tupian3_channel"
+            android:onClick="fanhui_tianqi"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="地名:"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_tianqi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="请输入地名,查天气"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tupian2_channel"
+            android:onClick="chaxun_tianqi"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:elevation="5dp"
+        android:background="#fefefe"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/layout_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="北京" />
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/city"
+            android:gravity="center"
+            android:text="周三" />
+
+        <TextView
+          android:id="@+id/up"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/week"
+            android:gravity="center"
+            android:text="更新时间:" />
+
+        <TextView
+            android:id="@+id/uptime"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/up"
+            android:gravity="center"
+            android:text="2020-03-13 17:24:27" />
+
+        <ImageView
+            android:id="@+id/wea_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/city"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/wea"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/week"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/wea_img"
+            android:gravity="center"
+            android:text="晴" />
+
+        <TextView
+            android:id="@+id/tem"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/wea"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/wea_img"
+            android:gravity="center"
+            android:text="23度" />
+
+        <TextView
+            android:id="@+id/tem1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/uptime"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/wea"
+            android:gravity="center"
+            android:text="20度~29度" />
+
+        <TextView
+            android:id="@+id/air_level"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tem1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/wea"
+            android:gravity="center"
+            android:text="空气质量：良好" />
+
+        <TextView
+            android:id="@+id/air_tips"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/wea_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="空气很好，可以外出活动，呼吸新鲜空气，拥抱大自然" />
+    </RelativeLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text_tianqi"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@+id/layout_four"-->
+    <!--        android:layout_marginLeft="2dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginRight="10dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textColor="#000" />-->
+</RelativeLayout>
